@@ -1,0 +1,8 @@
+# TODO
+
+1. modularize main X application window and the key/mouse event parsing.
+2. modify sdp record so we won't need the privilege to bind low L2CAP port.
+3. make the wheel (touchpad swipe gesture) work
+4. write a readme
+5. summarize keyboard shortcut, [reference](https://forum.xda-developers.com/showthread.php?t=1672281)
+6. low resolution of pointer events in Xlib
