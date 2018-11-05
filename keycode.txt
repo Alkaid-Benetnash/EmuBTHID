@@ -1,0 +1,226 @@
+; These are taken from the USB HID Usage Tables, section 10
+; The first column is the USB Usage ID
+; The second column is derived from the keycode name
+; "Keyboard" is omitted, and "Keypad" is abbreviated KP
+; Code 40 "Return" is changed to "Enter" since there is another
+; key named "Return"
+; The third column (optional) is a corresponding name that only
+; contains alphanumeric characters and spaces.
+; Note: 255 must be unused (it means "none")
+4	A
+5	B
+6	C
+7	D
+8	E
+9	F
+10	G
+11	H
+12	I
+13	J
+14	K
+15	L
+16	M
+17	N
+18	O
+19	P
+20	Q
+21	R
+22	S
+23	T
+24	U
+25	V
+26	W
+27	X
+28	Y
+29	Z
+30	1
+31	2
+32	3
+33	4
+34	5
+35	6
+36	7
+37	8
+38	9
+39	0
+40	Enter
+41	Escape
+42	Delete
+43	Tab
+44	Space
+45	-	Minus
+46	=	Equals
+47	[	Left Bracket
+48	]	Right Bracket
+49	\	Backslash
+50	Non-US #	NonUS Pound
+51	;	Semicolon
+52	'	Quote
+53	`	Grave
+54	,	Comma
+55	.	Period
+56	/	Slash
+57	Caps Lock
+58	F1
+59	F2
+60	F3
+61	F4
+62	F5
+63	F6
+64	F7
+65	F8
+66	F9
+67	F10
+68	F11
+69	F12
+70	Print Screen
+71	Scroll Lock
+72	Pause
+73	Insert
+74	Home
+75	Page Up
+76	Delete Forward
+77	End
+78	Page Down
+79	Right
+80	Left
+81	Down
+82	Up
+83	KP NumLock
+84	KP /	KP Divide
+85	KP *	KP Multiply
+86	KP -	KP Subtract
+87	KP +	KP Add
+88	KP Enter
+89	KP 1
+90	KP 2
+91	KP 3
+92	KP 4
+93	KP 5
+94	KP 6
+95	KP 7
+96	KP 8
+97	KP 9
+98	KP 0
+99	KP .	KP Point
+100	Non-US \	NonUS Backslash
+101	Application
+102	Power
+103	KP =	KP Equals
+104	F13
+105	F14
+106	F15
+107	F16
+108	F17
+109	F18
+110	F19
+111	F20
+112	F21
+113	F22
+114	F23
+115	F24
+116	Execute
+117	Help
+118	Menu
+119	Select
+120	Stop
+121	Again
+122	Undo
+123	Cut
+124	Copy
+125	Paste
+126	Find
+127	Mute
+128	Volume Up
+129	Volume Down
+130	Locking Caps Lock
+131	Locking Num Lock
+132	Locking Scroll Lock
+133	KP Comma
+134	KP Equal Sign
+135	International 1
+136	International 2
+137	International 3
+138	International 4
+139	International 5
+140	International 6
+141	International 7
+142	International 8
+143	International 9
+144	Lang 1
+145	Lang 2
+146	Lang 3
+147	Lang 4
+148	Lang 5
+149	Lang 6
+150	Lang 7
+151	Lang 8
+152	Lang 9
+153	Alternate Erase
+154	SysReq/Attention	SysReq
+155	Cancel
+156	Clear
+157	Prior
+158	Return
+159	Separator
+160	Out
+161	Oper
+162	Clear/Again	Clear
+163	CrSel/Props	CrSel
+164	ExSel
+; reserved
+176	KP 00
+177	KP 000
+178	Thousands Separator
+179	Decimal Separator
+180	Currency Unit
+181	Currency Sub-unit	Currency Subunit
+182	KP (	KP Left Paren
+183	KP )	KP Right Paren
+184	KP {	KP Left Brace
+185	KP }	KP Right Brace
+186	KP Tab
+187	KP Backspace
+188	KP A
+189	KP B
+190	KP C
+191	KP D
+192	KP E
+193	KP F
+194	KP XOR
+195	KP ^	KP Caret
+196	KP %	KP Percent
+197	KP <	KP Less Than
+198	KP >	KP Greater Than
+199	KP &	KP And
+200	KP &&	KP Double And
+201	KP |	KP Pipe
+202	KP ||	KP Double Pipe
+203	KP :	KP Colon
+204	KP #	KP Pound
+205	KP Space
+206	KP @	KP At Sign
+207	KP !	KP Exclamation
+208	KP Memory Store
+209	KP Memory Recall
+210	KP Memory Clear
+211	KP Memory Add
+212	KP Memory Subtract
+213	KP Memory Multiply
+214	KP Memory Divide
+215	KP +/-	KP Plus Minus
+216	KP Clear
+217	KP Clear Entry
+218	KP Binary
+219	KP Octal
+220	KP Decimal
+221	KP Hexadecimal
+; reserved
+224	Left Control
+225	Left Shift
+226	Left Alt
+227	Left GUI
+228	Right Control
+229	Right Shift
+230	Right Alt
+231	Right GUI
