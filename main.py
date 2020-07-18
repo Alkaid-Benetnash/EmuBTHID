@@ -9,6 +9,11 @@ import keymap
 from Xlib import X, display, Xutil
 from dbus.mainloop.glib import DBusGMainLoop
 
+"""
+Change this CONTROLLER_MAC to the mac of your own device
+"""
+CONTROLLER_MAC = "5C:87:9C:96:BE:5E"
+
 usbhid_map = {}
 with open("keycode.txt") as f:
     for line in f.read().splitlines():
@@ -223,7 +228,7 @@ if __name__ == '__main__':
     d = display.Display()
     d.change_keyboard_control(auto_repeat_mode=X.AutoRepeatModeOff)
     try:
-        bthid_srv = BluetoothHIDService(service_record)
+        bthid_srv = BluetoothHIDService(service_record, CONTROLLER_MAC)
         Window(d).loop(bthid_srv.send)
         #Window(d).loop(print)
     finally:

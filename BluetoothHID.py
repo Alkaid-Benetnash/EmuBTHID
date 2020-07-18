@@ -47,10 +47,10 @@ class BluetoothHIDService(object):
     HOST = 0
     PORT = 1
 
-    def __init__(self, service_record):
+    def __init__(self, service_record, MAC):
         self.P_CTRL = 0x0011
         self.P_INTR = 0x0013
-        self.SELFMAC = "7C:67:A2:94:6B:B8"
+        self.SELFMAC = MAC
         bus = dbus.SystemBus()
         bluez_obj = bus.get_object("org.bluez", "/org/bluez")
         manager = dbus.Interface(bluez_obj, "org.bluez.ProfileManager1")
