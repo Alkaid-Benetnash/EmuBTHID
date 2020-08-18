@@ -39,11 +39,12 @@ Edit `main.py` and change the `CONTROLLER_MAC` variable in the beginning to your
 
 ### Enable bluetooth
 
-1. make sure bluetooth service is running (systemctl status bluetooth)
-2. enter `bluetoothctl` and do `power on`
-3. make sure the bluetooth controller is not blocked by software (check rfkill or enable bluetooth in your desktop manager, e.g. gnome)
-4. Run `xhost +` to enable root user also draw something on a non-root user's X session. (see [this stackoverflow](https://stackoverflow.com/questions/31902846/how-to-fix-error-xlib-error-displayconnectionerror-cant-connect-to-display-0))
-5. Run `sudo python3 main.py`
+1. make sure bluetoothd has plugin `input` enabled ("-P input")
+2. make sure bluetooth service is running (systemctl status bluetooth)
+3. enter `bluetoothctl` and do `power on`
+4. make sure the bluetooth controller is not blocked by software (check rfkill or enable bluetooth in your desktop manager, e.g. gnome)
+5. Run `xhost +` to enable root user also draw something on a non-root user's X session. (see [this stackoverflow](https://stackoverflow.com/questions/31902846/how-to-fix-error-xlib-error-displayconnectionerror-cant-connect-to-display-0))
+6. Run `sudo python3 main.py`
 
 In bluetoothctl, it should look like this, where a lot of UUIDs are registered
 
