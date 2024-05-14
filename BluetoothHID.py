@@ -75,7 +75,7 @@ class BluetoothHIDService(object):
         print("Registered")
         sock_control.listen(1)
         sock_inter.listen(1)
-        print("waiting for connection")
+        print(f"waiting for connection at controller {MAC}, please double check with the MAC in bluetoothctl")
         self.ccontrol, cinfo = sock_control.accept()
         print("Control channel connected to " + cinfo[self.HOST])
         self.cinter, cinfo = sock_inter.accept()

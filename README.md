@@ -33,7 +33,7 @@ The client who uses the emulated HID device is an android 9 phone.
 
 ## How to Use
 
-### Update the bluetooth controller MAC in `main.py`
+### (IMPORTANT) Update the bluetooth controller MAC in `main.py`
 
 Edit `main.py` and change the `CONTROLLER_MAC` variable in the beginning to your own MAC. You can find the MAC of the bluetooth controller in `bluetoothctl`. E.g. the "5C:87:9C:96:BE:5E" shown in the screenshot below is the MAC.
 
@@ -77,19 +77,21 @@ And you can find this specific `Class` value and UUID for a "Human Interface Dev
 
 ![bluetoothctl-2](imgs/bluetoothctl-2.png)
 
-On the other hand, you should be able to see the main window of EmuBTHID which will capture your keyboard/mouse input:
-
-![MainWindow](imgs/MainWindow.png)
-
 6. Now go back to bluetoothctl, enable discoverable
 
    ![bluetoothctl-3](imgs/bluetoothctl-3.png)
 
-7. Now you should be able to discover a new HID device on other devices (e.g. an android phone). Now pair or re-connect. You should finish the pairing procedure in bluetoothctl (there will be a prompt). It looks like this:
+7. (unverified) [users](https://github.com/Alkaid-Benetnash/EmuBTHID/issues/7#issuecomment-1826289347) also reported that "pairable" might need to be explicitly enforced via bluetoothctl command `pairable on`. Just make sure in bluetoothctl you can see a message saying your controller `[CHG] Controller XX:XX:XX:XX:XX:XX Pairable: Yes`
+
+8. Now you should be able to discover a new HID device on other devices (e.g. an android phone). Now pair or re-connect. You should finish the pairing procedure in bluetoothctl (there will be a prompt). It looks like this:
 
    ![bluetoothctl-4](imgs/bluetoothctl-4.png)
 
-8. Final step, go back to the main window. enter "Ctrl+Alt+Shift+B" as shown in the window to grab keyboard as well as mouse input. Press the same combination again to un-grab.
+9. After a device is paired and connected, you should be able to see the main window of EmuBTHID which will capture your keyboard/mouse input:
+
+   ![MainWindow](imgs/MainWindow.png)
+
+9. Final step, go back to the main window. enter "Ctrl+Alt+Shift+B" as shown in the window to grab keyboard as well as mouse input. Press the same combination again to un-grab.
 
 ## Known Issues
 
