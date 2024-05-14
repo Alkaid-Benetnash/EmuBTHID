@@ -14,18 +14,18 @@ This tool requires "root" to listen to priviledged bluetooth ports, which commun
 
 This tool is recently tested under Archlinux:
 
-kernel: 5.7.7
+kernel: 6.8.9
 
-bluez: 5.54-2
+bluez: 5.75
 
-xorg-server: 1.20.8
+xorg-server: 21.1.13
 
 
 
 python libraries:
 
-python-xlib 0.27
-dbus-python 1.2.16
+python-xlib 0.33
+dbus-python 1.3.2
 
 
 
