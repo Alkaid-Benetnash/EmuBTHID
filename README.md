@@ -102,3 +102,4 @@ And you can find this specific `Class` value and UUID for a "Human Interface Dev
    ![bluetoothctl-authorize-prompt](imgs/bluetoothctl-authorize-prompt.png)
 
 3. Even though the keyboard usually works pretty well, the mouse sometimes becomes lagging. But I normally only use the keyboard feature.
+4. Don't work with apple devices. Having a "connection reset by peer" issue.
